@@ -1,0 +1,14 @@
+{
+	"scripts": {
+		"gen:dev": "sta --output 'src/generated' -p 'http://localhost:8000/auth/api-docs'",
+		"gen:sta": "sta --output 'src/generated' -p 'http://docs.linkjob.top:7000/spec/ishare-auth.json'",
+	  },
+	"devDependencies": {
+		"swagger-typescript-api": "^13.0.3",
+		"vite": "^5.0.10",
+		"vite-plugin-swagger-typescript-api": "^1.0.0"
+	},
+	"dependencies": {
+		"axios": "^1.6.3"
+	}
+}
