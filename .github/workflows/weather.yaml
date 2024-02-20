@@ -4,14 +4,14 @@ on:
   push:
   workflow_dispatch:
   schedule:
-    - cron: "0 23,4,7,10,14 * * *"
+    - cron: "0 23,4,7,10,14,15 * * *"
 
 jobs:
   bot:
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout codes"
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
       - name: "Get Weather"
         run: bash ./weather.sh
       - name: "Get Date"
